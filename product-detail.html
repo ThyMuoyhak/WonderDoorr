@@ -197,22 +197,21 @@ class="fixed top-0 right-0 w-3/4 max-w-xs h-full bg-white shadow-md transform tr
 <br><br>
 
     <!-- Product Detail Section -->
-<div id="product-detail" class="max-w-6xl mx-auto bg-white overflow-hidden flex flex-col lg:flex-row p-10  pt-12 space-y-6 lg:space-y-0 lg:space-x-8">
+  <div id="product-detail" class="max-w-6xl mx-auto bg-white overflow-hidden flex flex-col lg:flex-row p-10 pt-12 space-y-6 lg:space-y-0 lg:space-x-8">
     <!-- Product Image (Left side) -->
-    <div class="w-full lg:w-1/3">
-      <img class="w-full h-full object-cover image-animation" id="product-image" src="" alt="Product Image">
+    <div class="w-full lg:w-1/3 relative overflow-hidden">
+      <img class="w-full h-full object-cover image-animation transition-transform duration-300 ease-in-out transform hover:scale-110" id="product-image" src="" alt="Product Image">
     </div>
-  
+    
+
     <!-- Product Details (Right side) -->
     <div class="w-full lg:w-2/3 details-animation">
       <h1 id="product-title" class="text-4xl font-semibold text-blue-900 mb-4">Product Title</h1>
-      
-      <!-- Price -->
-      
-      
+
+     
       <!-- Product Description -->
       <p id="product-description" class="text-lg text-gray-700 leading-relaxed mb-6">Product description will be shown here.</p>
-      
+
       <!-- Action Buttons (Email & Telegram) -->
       <div class="flex space-x-6">
         <a href="mailto:thymuoyhak.biu@gmail.com" class="bg-green-500 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-green-600 transition duration-200">
@@ -222,13 +221,9 @@ class="fixed top-0 right-0 w-3/4 max-w-xs h-full bg-white shadow-md transform tr
           <i class="fab fa-telegram-plane mr-3"></i> Telegram
         </a>
       </div>
-      
     </div>
-    
   </div>
 
- 
-  
 
 
   
@@ -490,25 +485,40 @@ if (e.key === 'Enter') {
   <script>
 
     
-   // Parse query parameters from the URL
+  // Parse query parameters from the URL
 const urlParams = new URLSearchParams(window.location.search);
 const title = urlParams.get('title');
-const price = parseFloat(urlParams.get('price')) || 0; // Default to 0 if invalid
+const price = parseFloat(urlParams.get('price')) || 0;
 const image = urlParams.get('image');
-const description = urlParams.get('description'); // This is the image URL now
+const description = JSON.parse(decodeURIComponent(urlParams.get('description'))); // Parse the JSON string
 
 // Set product details dynamically
 document.getElementById('product-title').textContent = title || 'Product title not available';
-document.getElementById('product-image').src = image || 'default-image.jpg'; // Set a default image if not provided
 
-// Check if the description is a valid image URL
+document.getElementById('product-image').src = image || 'default-image.jpg';
+
+// Render description as a table
 const descriptionElement = document.getElementById('product-description');
-if (description && description.match(/\.(jpeg|jpg|gif|png)$/i)) {
-  // If description is an image URL, set it as an image
-  descriptionElement.innerHTML = `<img src="${description}" alt="Product Detail Image" class="product-detail-image">`;
+if (description && Array.isArray(description)) {
+  // Create a table with headers
+  const tableHTML = `
+    <table class="table-auto w-full border-collapse">
+      <thead>
+        
+      </thead>
+      <tbody>
+        ${description.map(item => 
+          `<tr>
+            <td class="px-4 py-2 border-b">${item.key}</td>
+            <td class="px-4 py-2 border-b">${item.value}</td>
+          </tr>`
+        ).join('')}
+      </tbody>
+    </table>
+  `;
+  descriptionElement.innerHTML = tableHTML;
 } else {
-  // Otherwise, just display it as text
-  descriptionElement.textContent = description || 'No description available for this product.';
+  descriptionElement.textContent = 'No description available.';
 }
 
   </script>

@@ -1,321 +1,286 @@
 // Simulated product data for 4 products
 const products = [
-    {
-      "id": 1,
-      "title": "Wonder Door",
-      "price": 29.99,
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "image": "https://realcraft.com/cdn/shop/products/ShakerDoubleFlatPanelMahogany-CenterBar_d3c3b163-99e9-4963-8e2b-cf64c1d41c29_1200x.jpg?v=1722436613"
-      
-    },
-    {
-      "id": 2,
-      "title": "Wonder Door",
-      "price": 39.99,
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "image": "https://realcraft.com/cdn/shop/products/ShakerDoubleFlatPanelMahogany-CenterBar_d3c3b163-99e9-4963-8e2b-cf64c1d41c29_1200x.jpg?v=1722436613"
-    },
-    {
-      "id": 3,
-      "title": "Wonder Door",
-      "price": 49.99,
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "image": "https://realcraft.com/cdn/shop/products/ShakerDoubleFlatPanelMahogany-CenterBar_d3c3b163-99e9-4963-8e2b-cf64c1d41c29_1200x.jpg?v=1722436613"
-    },
-    {
-      "id": 4,
-      "title": "Wonder Door",
-      "price": 59.99,
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "image": "https://realcraft.com/cdn/shop/products/ShakerDoubleFlatPanelMahogany-CenterBar_d3c3b163-99e9-4963-8e2b-cf64c1d41c29_1200x.jpg?v=1722436613"
-    },
-    {
-        "id": 5,
-        "title": "Wonder Door",
-        "price": 29.99,
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "image": "https://realcraft.com/cdn/shop/products/ShakerDoubleFlatPanelMahogany-CenterBar_d3c3b163-99e9-4963-8e2b-cf64c1d41c29_1200x.jpg?v=1722436613"
-      },
-      {
-        "id": 6,
-        "title": "Wonder Door",
-        "price": 39.99,
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "image": "https://realcraft.com/cdn/shop/products/ShakerDoubleFlatPanelMahogany-CenterBar_d3c3b163-99e9-4963-8e2b-cf64c1d41c29_1200x.jpg?v=1722436613"
-      },
-      {
-        "id": 7,
-        "title": "Wonder Door",
-        "price": 49.99,
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "image": "https://realcraft.com/cdn/shop/products/ShakerDoubleFlatPanelMahogany-CenterBar_d3c3b163-99e9-4963-8e2b-cf64c1d41c29_1200x.jpg?v=1722436613"
-      },
-      {
-        "id": 8,
-        "title": "Wonder Door",
-        "price": 59.99,
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "image": "https://realcraft.com/cdn/shop/products/ShakerDoubleFlatPanelMahogany-CenterBar_d3c3b163-99e9-4963-8e2b-cf64c1d41c29_1200x.jpg?v=1722436613"
-      }
-      ,
-    {
-        "id": 9,
-        "title": "Wonder Door",
-        "price": 29.99,
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "image": "https://realcraft.com/cdn/shop/products/ShakerDoubleFlatPanelMahogany-CenterBar_d3c3b163-99e9-4963-8e2b-cf64c1d41c29_1200x.jpg?v=1722436613"
-      },
-      {
-        "id": 10,
-        "title": "Wonder Door",
-        "price": 39.99,
-        "description": "This is another product description.",
-        "image": "https://realcraft.com/cdn/shop/products/ShakerDoubleFlatPanelMahogany-CenterBar_d3c3b163-99e9-4963-8e2b-cf64c1d41c29_1200x.jpg?v=1722436613"
-      },
-      {
-        "id": 11,
-        "title": "Wonder Door",
-        "price": 49.99,
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "image": "https://realcraft.com/cdn/shop/products/ShakerDoubleFlatPanelMahogany-CenterBar_d3c3b163-99e9-4963-8e2b-cf64c1d41c29_1200x.jpg?v=1722436613"
-      },
-      {
-        "id": 12,
-        "title": "Wonder Door",
-        "price": 59.99,
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "image": "https://realcraft.com/cdn/shop/products/ShakerDoubleFlatPanelMahogany-CenterBar_d3c3b163-99e9-4963-8e2b-cf64c1d41c29_1200x.jpg?v=1722436613"
-      },
-      {
-        "id": 13,
-        "title": "Wonder Door",
-        "price": 29.99,
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "image": "https://qiniu.digood-assets-fallback.work/542/1597636023_0107%20smart%20lock%20AJ3051-01.jpg"
-        
-      },
-      {
-        "id": 14,
-        "title": "Wonder Door",
-        "price": 39.99,
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "image": "https://qiniu.digood-assets-fallback.work/542/1597636023_0107%20smart%20lock%20AJ3051-01.jpg"
-      },
-      {
-        "id": 15,
-        "title": "Wonder Door",
-        "price": 49.99,
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "image": "https://qiniu.digood-assets-fallback.work/542/1597636023_0107%20smart%20lock%20AJ3051-01.jpg"
-      },
-      {
-        "id": 16,
-        "title": "Wonder Door",
-        "price": 59.99,
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "image": "https://qiniu.digood-assets-fallback.work/542/1597636023_0107%20smart%20lock%20AJ3051-01.jpg"
-      },
-      {
-          "id": 17,
-          "title": "Wonder Door",
-          "price": 29.99,
-          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "image": "https://qiniu.digood-assets-fallback.work/542/1597636023_0107%20smart%20lock%20AJ3051-01.jpg"
-        },
-        {
-          "id": 18,
-          "title": "Wonder Door",
-          "price": 39.99,
-          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "image": "https://qiniu.digood-assets-fallback.work/542/1597636023_0107%20smart%20lock%20AJ3051-01.jpg"
-        },
-        {
-          "id": 19,
-          "title": "Wonder Door",
-          "price": 49.99,
-          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "image": "https://qiniu.digood-assets-fallback.work/542/1597636023_0107%20smart%20lock%20AJ3051-01.jpg"
-        },
-        {
-          "id": 20,
-          "title": "Wonder Door",
-          "price": 59.99,
-          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "image": "https://qiniu.digood-assets-fallback.work/542/1597636023_0107%20smart%20lock%20AJ3051-01.jpg"
-        }
-        ,
-      {
-          "id": 21,
-          "title": "Wonder Door",
-          "price": 29.99,
-          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "image": "https://qiniu.digood-assets-fallback.work/542/1597636023_0107%20smart%20lock%20AJ3051-01.jpg"
-        },
-        {
-          "id": 22,
-          "title": "Wonder Door",
-          "price": 39.99,
-          "description": "This is another product description.",
-          "image": "https://qiniu.digood-assets-fallback.work/542/1597636023_0107%20smart%20lock%20AJ3051-01.jpg"
-        },
-        {
-          "id": 23,
-          "title": "Wonder Door",
-          "price": 49.99,
-          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "image": "https://qiniu.digood-assets-fallback.work/542/1597636023_0107%20smart%20lock%20AJ3051-01.jpg"
-        },
-        {
-          "id": 24,
-          "title": "Wonder Door",
-          "price": 59.99,
-          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "image": "https://qiniu.digood-assets-fallback.work/542/1597636023_0107%20smart%20lock%20AJ3051-01.jpg"
-        }
-        ,
-      {
-        "id": 25,
-        "title": "Wonder Door",
-        "price": 59.99,
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "image": "https://www.porteitaliane.com/cdn/shop/files/24-Fip-Porta_12_Ciliegio.jpg?v=1721049548&width=1214"
-      },
-      {
-        "id": 26,
-        "title": "Wonder Door",
-        "price": 29.99,
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "image": "https://www.porteitaliane.com/cdn/shop/files/24-Fip-Porta_12_Ciliegio.jpg?v=1721049548&width=1214"
-        
-      },
-      {
-        "id": 27,
-        "title": "Wonder Door",
-        "price": 39.99,
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "image": "https://www.porteitaliane.com/cdn/shop/files/24-Fip-Porta_12_Ciliegio.jpg?v=1721049548&width=1214"
-      },
-      {
-        "id": 28,
-        "title": "Wonder Door",
-        "price": 49.99,
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "image": "https://www.porteitaliane.com/cdn/shop/files/24-Fip-Porta_12_Ciliegio.jpg?v=1721049548&width=1214"
-      },
-      {
-        "id": 29,
-        "title": "Wonder Door",
-        "price": 59.99,
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "image": "https://www.porteitaliane.com/cdn/shop/files/24-Fip-Porta_12_Ciliegio.jpg?v=1721049548&width=1214"
-      },
-      {
-          "id": 30,
-          "title": "Wonder Door",
-          "price": 29.99,
-          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "image": "https://www.porteitaliane.com/cdn/shop/files/24-Fip-Porta_12_Ciliegio.jpg?v=1721049548&width=1214"
-        },
-        {
-          "id": 31,
-          "title": "Wonder Door",
-          "price": 39.99,
-          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "image": "https://www.porteitaliane.com/cdn/shop/files/24-Fip-Porta_12_Ciliegio.jpg?v=1721049548&width=1214"
-        },
-        {
-          "id": 32,
-          "title": "Wonder Door",
-          "price": 49.99,
-          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "image": "https://www.porteitaliane.com/cdn/shop/files/24-Fip-Porta_12_Ciliegio.jpg?v=1721049548&width=1214"
-        },
-        {
-          "id": 33,
-          "title": "Wonder Door",
-          "price": 59.99,
-          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "image": "https://www.porteitaliane.com/cdn/shop/files/24-Fip-Porta_12_Ciliegio.jpg?v=1721049548&width=1214"
-        }
-        ,
-      {
-          "id": 34,
-          "title": "Wonder Door",
-          "price": 29.99,
-          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "image": "https://www.porteitaliane.com/cdn/shop/files/24-Fip-Porta_12_Ciliegio.jpg?v=1721049548&width=1214"
-        },
-        {
-          "id": 35,
-          "title": "Wonder Door",
-          "price": 39.99,
-          "description": "This is another product description.",
-          "image": "https://www.porteitaliane.com/cdn/shop/files/24-Fip-Porta_12_Ciliegio.jpg?v=1721049548&width=1214"
-        },
-        {
-          "id": 36,
-          "title": "Wonder Door",
-          "price": 49.99,
-          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "image": "https://www.porteitaliane.com/cdn/shop/files/24-Fip-Porta_12_Ciliegio.jpg?v=1721049548&width=1214"
-        },
-        
+  {
+    "id": 1,
+    title: "Wonder Door",
+    price: 29,
+    description: [
+      { "key": "mode", "value": "H7 LAMINATE LK 4425 A" },
+      { "key": "color", "value": "As per client's requirement" },
+      { "key": "Door frame", "value": "45 x 110 - 300 mm" },
+      { "key": "Door Leaf", "value": "40 - 50 mm" },
+      { "key": "Inner core or door leaf", "value": "Honeycomb" },
+      { "key": "Casting", "value": "50 x 10 mm" },
+      { "key": "Hardware", "value": "As per client's requirement" },
+      { "key": "Finishing", "value": "Laminate" },
+      { "key": "Brand name", "value": "AN CUONG"},
+      { "key": "Origin", "value": "Viet Nam" }
+    ]
+    ,
+    image: "https://5.imimg.com/data5/SELLER/Default/2022/3/HC/MU/XT/147745819/4-feet-wooden-designer-stool-500x500.jpg"
+  },
+  {
+    id: 2,
+    title: "Wonder Door",
+    price: 29,
+    description: [
+      { "key": "mode", "value": "H7 LAMINATE LK 4425 A" },
+      { "key": "color", "value": "As per client's requirement" },
+      { "key": "Door frame", "value": "45 x 110 - 300 mm" },
+      { "key": "Door Leaf", "value": "40 - 50 mm" },
+      { "key": "Inner core or door leaf", "value": "Honeycomb" },
+      { "key": "Casting", "value": "50 x 10 mm" },
+      { "key": "Hardware", "value": "As per client's requirement" },
+      { "key": "Finishing", "value": "Laminate" },
+      { "key": "Brand name", "value": "AN CUONG"},
+      { "key": "Origin", "value": "Viet Nam" }
+    ]
+    ,
+    image: "https://www.sahsghana.com/cdn/shop/files/Single_6b67f374-3cc0-40dc-bb26-8dc5d4d0b69a.jpg?v=1698928449"
+  }, {
+    id: 3,
+    title: "Wonder Door",
+    price: 29,
+    description: [
+      { "key": "mode", "value": "H7 LAMINATE LK 4425 A" },
+      { "key": "color", "value": "As per client's requirement" },
+      { "key": "Door frame", "value": "45 x 110 - 300 mm" },
+      { "key": "Door Leaf", "value": "40 - 50 mm" },
+      { "key": "Inner core or door leaf", "value": "Honeycomb" },
+      { "key": "Casting", "value": "50 x 10 mm" },
+      { "key": "Hardware", "value": "As per client's requirement" },
+      { "key": "Finishing", "value": "Laminate" },
+      { "key": "Brand name", "value": "AN CUONG"},
+      { "key": "Origin", "value": "Viet Nam" }
+    ]
+    ,
+    image: "https://www.sharenply.com/uploaded-files/category/images/Plywood-Door.jpg"
+  },
+  {
+    id: 4,
+    title: "Wonder Door",
+    price: 29,
+    description: [
+      { "key": "mode", "value": "H7 LAMINATE LK 4425 A" },
+      { "key": "color", "value": "As per client's requirement" },
+      { "key": "Door frame", "value": "45 x 110 - 300 mm" },
+      { "key": "Door Leaf", "value": "40 - 50 mm" },
+      { "key": "Inner core or door leaf", "value": "Honeycomb" },
+      { "key": "Casting", "value": "50 x 10 mm" },
+      { "key": "Hardware", "value": "As per client's requirement" },
+      { "key": "Finishing", "value": "Laminate" },
+      { "key": "Brand name", "value": "AN CUONG"},
+      { "key": "Origin", "value": "Viet Nam" }
+    ]
+    ,
+    image: "https://www.shabanastores.com/wp-content/uploads/2023/11/Shabana-stores-Barry-Wood-Internal-Wood-Door-Code-WPC-400-Reddish-Brown-90cm-2.png"
+  },
+  {
+    id: 5,
+    title: "WPC Door",
+    price: 29,
+    description: [
+      { "key": "mode", "value": "H7 LAMINATE LK 4425 A" },
+      { "key": "color", "value": "As per client's requirement" },
+      { "key": "Door frame", "value": "45 x 110 - 300 mm" },
+      { "key": "Door Leaf", "value": "40 - 50 mm" },
+      { "key": "Inner core or door leaf", "value": "Honeycomb" },
+      { "key": "Casting", "value": "50 x 10 mm" },
+      { "key": "Hardware", "value": "As per client's requirement" },
+      { "key": "Finishing", "value": "Laminate" },
+      { "key": "Brand name", "value": "AN CUONG"},
+      { "key": "Origin", "value": "Viet Nam" }
+    ]
+    ,
+    image: "https://5.imimg.com/data5/SELLER/Default/2023/7/326799514/FB/YJ/ZZ/149320369/28mm-sv-woods-wpc-door.jpg"
+  },
+  {
+    id: 6,
+    title: "WPC Door",
+    price: 29,
+    description: [
+      { "key": "mode", "value": "H7 LAMINATE LK 4425 A" },
+      { "key": "color", "value": "As per client's requirement" },
+      { "key": "Door frame", "value": "45 x 110 - 300 mm" },
+      { "key": "Door Leaf", "value": "40 - 50 mm" },
+      { "key": "Inner core or door leaf", "value": "Honeycomb" },
+      { "key": "Casting", "value": "50 x 10 mm" },
+      { "key": "Hardware", "value": "As per client's requirement" },
+      { "key": "Finishing", "value": "Laminate" },
+      { "key": "Brand name", "value": "AN CUONG"},
+      { "key": "Origin", "value": "Viet Nam" }
+    ]
+    ,
+    image: "https://www.door-manufacturers.com/doorpic/201611563923868.jpg"
+  },
+  {
+    id: 7,
+    title: "WPC Door",
+    price: 29,
+    description: [
+      { "key": "mode", "value": "H7 LAMINATE LK 4425 A" },
+      { "key": "color", "value": "As per client's requirement" },
+      { "key": "Door frame", "value": "45 x 110 - 300 mm" },
+      { "key": "Door Leaf", "value": "40 - 50 mm" },
+      { "key": "Inner core or door leaf", "value": "Honeycomb" },
+      { "key": "Casting", "value": "50 x 10 mm" },
+      { "key": "Hardware", "value": "As per client's requirement" },
+      { "key": "Finishing", "value": "Laminate" },
+      { "key": "Brand name", "value": "AN CUONG"},
+      { "key": "Origin", "value": "Viet Nam" }
+    ]
+    ,
+    image: "https://5.imimg.com/data5/SELLER/Default/2023/9/348392835/NN/HN/XN/2761234/whatsapp-image-2023-09-29-at-10-12-49-500x500.jpeg"
+  },
+  {
+    id: 8,
+    title: "Bathroom Door",
+    price: 29,
+    description: [
+      { "key": "mode", "value": "H7 LAMINATE LK 4425 A" },
+      { "key": "color", "value": "As per client's requirement" },
+      { "key": "Door frame", "value": "45 x 110 - 300 mm" },
+      { "key": "Door Leaf", "value": "40 - 50 mm" },
+      { "key": "Inner core or door leaf", "value": "Honeycomb" },
+      { "key": "Casting", "value": "50 x 10 mm" },
+      { "key": "Hardware", "value": "As per client's requirement" },
+      { "key": "Finishing", "value": "Laminate" },
+      { "key": "Brand name", "value": "AN CUONG"},
+      { "key": "Origin", "value": "Viet Nam" }
+    ]
+    ,
+    image: "https://5.imimg.com/data5/SELLER/Default/2022/4/RA/XM/GH/48686805/wpc-coloured-door-frame-500x500.jpg"
+  },
+  {
+    id: 9,
+    title: "Door Lock",
+    price: 29,
+    description: [
+      { "key": "mode", "value": "H7 LAMINATE LK 4425 A" },
+      { "key": "color", "value": "As per client's requirement" },
+      { "key": "Door frame", "value": "45 x 110 - 300 mm" },
+      { "key": "Door Leaf", "value": "40 - 50 mm" },
+      { "key": "Inner core or door leaf", "value": "Honeycomb" },
+      { "key": "Casting", "value": "50 x 10 mm" },
+      { "key": "Hardware", "value": "As per client's requirement" },
+      { "key": "Finishing", "value": "Laminate" },
+      { "key": "Brand name", "value": "AN CUONG"},
+      { "key": "Origin", "value": "Viet Nam" }
+    ]
+    ,
+    image: "https://image.made-in-china.com/202f0j00SIeGvKQqCLoD/Entrance-Door-Lock-Double-Sided-Key-Door-Handle-Lock-Mortise-Door-Lock-Set.webp"
+  },
+  {
+    id: 10,
+    title: "Door Lock",
+    price: 29,
+    description: [
+      { "key": "mode", "value": "H7 LAMINATE LK 4425 A" },
+      { "key": "color", "value": "As per client's requirement" },
+      { "key": "Door frame", "value": "45 x 110 - 300 mm" },
+      { "key": "Door Leaf", "value": "40 - 50 mm" },
+      { "key": "Inner core or door leaf", "value": "Honeycomb" },
+      { "key": "Casting", "value": "50 x 10 mm" },
+      { "key": "Hardware", "value": "As per client's requirement" },
+      { "key": "Finishing", "value": "Laminate" },
+      { "key": "Brand name", "value": "AN CUONG"},
+      { "key": "Origin", "value": "Viet Nam" }
+    ]
+    ,
+    image: "https://s.alicdn.com/@sc04/kf/H002acb9489a940578b8ed7dc706c66e2o.jpg_720x720q50.jpg"
+  },
+  {
+    id: 11,
+    title: "Wonder Door",
+    price: 29,
+    description: [
+      { "key": "mode", "value": "H7 LAMINATE LK 4425 A" },
+      { "key": "color", "value": "As per client's requirement" },
+      { "key": "Door frame", "value": "45 x 110 - 300 mm" },
+      { "key": "Door Leaf", "value": "40 - 50 mm" },
+      { "key": "Inner core or door leaf", "value": "Honeycomb" },
+      { "key": "Casting", "value": "50 x 10 mm" },
+      { "key": "Hardware", "value": "As per client's requirement" },
+      { "key": "Finishing", "value": "Laminate" },
+      { "key": "Brand name", "value": "AN CUONG"},
+      { "key": "Origin", "value": "Viet Nam" }
+    ]
+    ,
+    image: "https://cdn.bestsuppliers.com/seo_products_img/newkind/1600488963688/0c6cc79b08493b538734365db3eafea2.jpg!/rotate/180/sq/400"
+  },
+  {
+    id: 12,
+    title: "Door Lock",
+    price: 29,
+    description: [
+      { "key": "mode", "value": "H7 LAMINATE LK 4425 A" },
+      { "key": "color", "value": "As per client's requirement" },
+      { "key": "Door frame", "value": "45 x 110 - 300 mm" },
+      { "key": "Door Leaf", "value": "40 - 50 mm" },
+      { "key": "Inner core or door leaf", "value": "Honeycomb" },
+      { "key": "Casting", "value": "50 x 10 mm" },
+      { "key": "Hardware", "value": "As per client's requirement" },
+      { "key": "Finishing", "value": "Laminate" },
+      { "key": "Brand name", "value": "AN CUONG"},
+      { "key": "Origin", "value": "Viet Nam" }
+    ]
+    ,
+    image: "https://www.hafele.co.uk/INTERSHOP/static/WFS/Haefele-HUK-Site/-/Haefele-HUK/en_GB/opentext/assets/huk/Rim-locks-responsive.jpg"
+  }
   ];
 
   function displayProducts() {
+    // Get the container element once
     const productContainer = document.getElementById('product-container');
     
+    // Initialize productCards as an empty string
     let productCards = '';
+    
     // Loop through products and generate cards
     products.forEach((product, index) => {
       productCards += `
         <div id="pd"
-  class="product-card relative max-w-xs overflow-hidden group hover:cursor-pointer border-2 border-transparent group-hover:border-blue-500 transform transition-all duration-300"
-  data-index="${index}"
->
-  <!-- Attach index for easy identification -->
-
-  <!-- Product Image -->
-  <img class=" w-full h-100 object-cover transition-transform duration-300" src="${product.image}" alt="${product.title}">
-
-  <!-- Shine Effect -->
-  <div class="shine absolute inset-0 z-10 opacity-0 group-hover:opacity-100"></div>
-
-  <!-- Product Info -->
-  <div class="px-6 py-4 bg-blue-900">
-    <div class="text-center font-semibold text-xl mb-2 text-white">${product.title}</div>
-  </div>
-</div>
-
+          class="product-card relative max-w-xs overflow-hidden group hover:cursor-pointer border-2 border-transparent group-hover:border-blue-500 transform transition-all duration-300"
+          data-index="${index}"
+        >
+          <!-- Product Image -->
+          <img id="imga" class="w-full h-100 object-cover transition-transform duration-300" src="${product.image}" alt="${product.title}">
+  
+          <!-- Shine Effect -->
+          <div class="shine absolute inset-0 z-10 opacity-0 group-hover:opacity-100"></div>
+  
+          <!-- Product Info -->
+          <div class="px-6 py-4 bg-blue-900">
+            <div class="text-center font-semibold text-xl mb-2 text-white">${product.title}</div>
+          </div>
+        </div>
       `;
     });
-
+  
     // Insert product cards into the container
-    document.getElementById('product-container').innerHTML = productCards;
-
-    // Add click event listener for product cards
-    document.getElementById('product-container').addEventListener('click', (event) => {
-      const productCard = event.target.closest('.product-card');
-      if (productCard) {
-        const index = productCard.getAttribute('data-index');
-        const product = products[index];
-        // Redirect to product detail page with query parameters
-        window.location.href = `product-detail.html?title=${encodeURIComponent(product.title)}&price=${encodeURIComponent(product.price)}&image=${encodeURIComponent(product.image)}&description=${encodeURIComponent(product.description)}`;
-      }
-    });
-  
-  
-
-    // Insert the generated product cards into the container
     productContainer.innerHTML = productCards;
+  
+    // Add a click event listener for product cards
+productContainer.addEventListener('click', (event) => {
+  const productCard = event.target.closest('.product-card');
+  if (productCard) {
+    const index = productCard.getAttribute('data-index');
+    const product = products[index];
     
+    // Convert description to JSON string if it's an object or array
+    const description = JSON.stringify(product.description);
+    
+    // Redirect to product detail page with query parameters
+    window.location.href = `product-detail.html?title=${encodeURIComponent(product.title)}&price=${encodeURIComponent(product.price)}&image=${encodeURIComponent(product.image)}&description=${encodeURIComponent(description)}`;
+  }
+    });
   }
   
 
   // Call the displayProducts function when the page loads
   window.onload = displayProducts;
 
-  // Function to filter products based on search input
+// Function to filter products based on search input
 function filterProducts() {
   const searchTerm = document.getElementById('search').value.toLowerCase();
   
@@ -324,12 +289,21 @@ function filterProducts() {
     product.title.toLowerCase().includes(searchTerm)
   );
   
-  // Display the filtered products
-  displayProducts(filteredProducts);
+  // If no products match, display a message
+  if (filteredProducts.length === 0) {
+    document.getElementById('product-container').innerHTML = '<p>No products found</p>';
+  } else {
+    // Display the filtered products
+    displayProducts(filteredProducts);
+  }
 }
 
 // Event listener for search button
 document.getElementById('search-btn').addEventListener('click', filterProducts);
 
-// Display all products initially
-window.onload = () => displayProducts(products);
+// Display all products initially (ensure 'products' is defined before this)
+window.onload = () => {
+  console.log('Products array on load:', products); // Debugging log
+  displayProducts(products);  // Make sure products is defined and available
+};
+

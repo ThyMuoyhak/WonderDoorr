@@ -196,35 +196,33 @@ class="fixed top-0 right-0 w-3/4 max-w-xs h-full bg-white shadow-md transform tr
 </div>
 <br><br>
 
-    <!-- Product Detail Section -->
-<div id="product-detail" class="max-w-6xl mx-auto bg-white overflow-hidden flex flex-col lg:flex-row p-10  pt-12 space-y-6 lg:space-y-0 lg:space-x-8">
-    <!-- Product Image (Left side) -->
-    <div class="w-full lg:w-1/3">
-      <img class="w-full h-full object-cover image-animation" id="product-image" src="" alt="Product Image">
-    </div>
-  
-    <!-- Product Details (Right side) -->
-    <div class="w-full lg:w-2/3 details-animation">
-      <h1 id="product-title" class="text-4xl font-semibold text-blue-900 mb-4">Product Title</h1>
-      
-      <!-- Price -->
-      
-      
-      <!-- Product Description -->
-      <p id="product-description" class="text-lg text-gray-700 leading-relaxed mb-6">Product description will be shown here.</p>
-      
-      <!-- Action Buttons (Email & Telegram) -->
-      <div class="flex space-x-6">
-        <a href="mailto:info@wonderdoor.com" class="bg-green-500 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-green-600 transition duration-200">
-          <i class="fas fa-envelope mr-3"></i> Email
-        </a>
-        <a href="https://t.me/yourtelegram" class="bg-blue-500 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-blue-600 transition duration-200">
-          <i class="fab fa-telegram-plane mr-3"></i> Telegram
-        </a>
-      </div>
+   <!-- Product Detail Section -->
+<div id="product-detail" class="max-w-6xl mx-auto bg-white overflow-hidden flex flex-col lg:flex-row p-10 pt-12 space-y-6 lg:space-y-0 lg:space-x-8">
+  <!-- Product Image (Left side) -->
+  <div class="w-full lg:w-1/3">
+    <img class="w-full h-full object-cover image-animation" id="product-image" src="" alt="Product Image">
+  </div>
+
+  <!-- Product Details (Right side) -->
+  <div class="w-full lg:w-2/3 details-animation">
+    <h1 id="product-title" class="text-4xl font-semibold text-blue-900 mb-4">Product Title</h1>
+    
+    
+    <!-- Product Description -->
+    <p id="product-description" class="text-lg text-gray-700 leading-relaxed mb-6">Product description will be shown here.</p>
+    
+    <!-- Action Buttons (Email & Telegram) -->
+    <div class="flex space-x-6">
+      <a href="mailto:info@wonderdoor.com" class="bg-green-500 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-green-600 transition duration-200">
+        <i class="fas fa-envelope mr-3"></i> Email
+      </a>
+      <a href="https://t.me/yourtelegram" class="bg-blue-500 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-blue-600 transition duration-200">
+        <i class="fab fa-telegram-plane mr-3"></i> Telegram
+      </a>
     </div>
   </div>
-  
+</div>
+
 
   <!-- Container to hold the product card -->
 <div class="flex items-center justify-center">
@@ -484,18 +482,51 @@ if (e.key === 'Enter') {
 
     
     document.addEventListener('DOMContentLoaded', () => {
-        const product = JSON.parse(localStorage.getItem('selectedProduct'));
-        
-        if (product) {
-          document.getElementById('product-title').textContent = product.title;
-          document.getElementById('product-image').src = product.image;
-          document.getElementById('product-description').textContent = product.description || 'No description available';
-          // Add other product details if necessary, like price
+      // Get the product ID from URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get('id');
+      
+      // Retrieve the product from localStorage using the product ID
+      const product = JSON.parse(localStorage.getItem('selectedProduct'));
+    
+      if (product) {
+        // Update product details on the page
+        document.getElementById('product-title').textContent = product.title;
+        document.getElementById('product-image').src = product.image;
+        document.getElementById('product-image').alt = product.title;
+    
+      
+    
+        // Display the description
+        const descriptionContainer = document.getElementById('product-description');
+        let descriptionHtml = '';
+        if (product.description && product.description.length > 0) {
+          product.description.forEach(item => {
+            descriptionHtml += `
+            <table class="table-auto w-full border-collapse">
+              <thead>
+      <tr>
+      </tr>
+    </thead>
+              <tbody>
+              <tr>
+            <td class="px-4 py-2 border-b text-left">${item.key}</td>
+            <td class="px-4 py-2 border-b text-right">${item.value}</td>
+          </tr>
+          </tbody>
+              </table>
+            `;
+          });
         } else {
-          // Handle case where product is not found in localStorage
-          console.error('Product not found in localStorage.');
+          descriptionHtml = 'No description available';
         }
-      });
+    
+        descriptionContainer.innerHTML = descriptionHtml;
+      } else {
+        console.error('Product not found');
+      }
+    });
+    
       
       
   </script>
